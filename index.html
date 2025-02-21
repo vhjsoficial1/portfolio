@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio // Vitor</title>
+    <link rel="icon" href="logo vhjs quadrada.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #1C1C1C;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            min-height: 80px;
+            box-sizing: border-box;
+        }
+        header img {
+            width: 100px;
+            height: 35px;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        header nav li {
+            display: inline-block;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        section {
+            padding: 20px;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        #introducao {
+        background-color: #131313;
+        padding: 60px 40px;
+        padding-top: 90px;
+        text-align: center;
+        color: #fff;
+        }
+        #introducao .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #introducao .texto {
+            text-align: left;
+        }
+        #introducao .paragrafo1 {
+            font-size: 16px;
+            margin: 0;
+        }
+        #introducao .paragrafo2 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        #introducao .paragrafo3 {
+            font-size: 16px;
+            margin: 0;
+        }
+        #introducao img {
+            width: 375px;
+            height: 467px;
+            object-fit: contain;
+        }
+        #sobre {
+            background-color: #212121;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            color: #fff;
+        }
+        #sobre img {
+            width: 325px;
+            height: 325px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+        }
+        #sobre div {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo vhjs.png" alt="Logotipo do Portfólio">
+        <nav>
+            <ul>
+                <li><a href="#introducao">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="introducao">
+        <div class="conteudo">
+            <div class="texto">
+                <p class="paragrafo1">Olá, me chamo</p>
+                <p class="paragrafo2">Vitor Hugo</p>
+                <p class="paragrafo3">Desbravando o mundo do desenvolvimento Web.</p>
+            </div>
+            <img src="coding.png" alt="Imagem de desenvolvimento">
+        </div>
+    </section>
+    <section id="sobre">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHkbVHQscuN3Q/profile-displayphoto-shrink_400_400/B4DZPgOh7XGUAg-/0/1734633726647?e=1745452800&v=beta&t=qeJpCTvXhQxmsF54QKgCl3SDJzXGfNLS-hgB7PCNZOQ" alt="Foto de Vitor Hugo">
+        <div>
+            <h2>Sobre mim</h2>
+            <p>Sou um graduando em Engenharia de Computação e atualmente estagiário na área de Automação no Senai Cimatec. Apaixonado por resolver problemas complexos e criar soluções digitais inovadoras, concentro meus esforços em desenvolver sistemas eficientes, funcionais e de alta qualidade.</p>
+            <p>Ao longo da minha jornada como desenvolvedor, tive a oportunidade de colaborar em projetos desafiadores e trabalhar ao lado de outros desenvolvedores talentosos. Juntos, criamos aplicativos robustos e escrevemos códigos limpos, fáceis de manter e compreender. Minha dedicação aos estudos me proporcionou uma base sólida em desenvolvimento web, e tenho aplicado esses conhecimentos em cenários práticos e aplicações reais.</p>
+            <p>Além disso, sou fascinado por tecnologia, automação e inovação. Estou sempre buscando aprender algo novo, explorar diferentes abordagens e pensar em formas de melhorar processos e produtos. Quando não estou codando ou mergulhado em projetos, você pode me encontrar assistindo partidas de futebol ou perdendo a cabeça jogando Counter-Strike 2.</p>
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li>
+                <h3>Projeto: Jogo em C</h3>
+                <p>Um jogo de cartas em C, sem interface. Feito na matéria de Algoritmos e Estruturas de Dados.</p>
+                <img src="projeto1.jpg" alt="Jogo em C">
+            </li>
+            <li>
+                <h3>Projeto: Xadrez em Java</h3>
+                <p>Um jogo de xadrez em Java, feito na matéria de Programação Orientada a Objetos.</p>
+                <img src="projeto2.jpg" alt="Xadrez em Java">
+            </li>
+        </ul>
+    </section>
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Programação em Java</li>
+            <li>Desenvolvimento web com HTML, CSS e JavaScript</li>
+            <li>Banco de dados com MySQL</li>
+            <li>Programação em C</li>
+            <li>Programação em Python</li>
+        </ul>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo pelo e-mail <a href="mailto:vitorhjs.contatoo@gmail.com">vitorhjs.contato@gmail.com</a> ou pelo telefone (11) 1234-5678.</p>
+        <p><a href="exercicio1.html">Aperte para uma surpresa</a></p>
+    </section>
+</body>
+</html>
