@@ -1,185 +1,439 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio // Vitor</title>
-    <link rel="icon" href="logo vhjs quadrada.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        header {
-            background-color: #1C1C1C;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            min-height: 80px;
-            box-sizing: border-box;
-        }
-        header img {
-            width: 100px;
-            height: 35px;
-        }
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-        header nav li {
-            display: inline-block;
-        }
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        section {
-            padding: 20px;
-            padding-top: 100px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        p {
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-        #introducao {
-        background-color: #131313;
-        padding: 60px 40px;
-        padding-top: 90px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio // Vitor</title>
+  <link rel="icon" href="logo vhjs quadrada.png" type="image/png">
+
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      min-width: 320px;
+    }
+    
+    header {
+      background-color: #1C1C1C;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      min-height: 80px;
+      box-sizing: border-box;
+    }
+    
+    header img {
+      width: 100px;
+      height: 35px;
+    }
+    
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    
+    header nav li {
+      display: inline-block;
+    }
+    
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    section {
+      padding: 20px;
+      padding-top: 100px;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    /* Seção de introdução */
+    #introducao {
+      background-color: #131313;
+      padding: 60px 40px;
+      padding-top: 90px;
+      text-align: center;
+      color: #fff;
+    }
+    
+    #introducao .conteudo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    #introducao .texto {
+      text-align: left;
+    }
+    
+    #introducao .paragrafo1 {
+      font-size: 16px;
+      margin: 0;
+    }
+    
+    #introducao .paragrafo2 {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    
+    #introducao .paragrafo3 {
+      font-size: 16px;
+      margin: 0;
+    }
+    
+    #introducao img {
+      width: 375px;
+      height: 467px;
+      object-fit: contain;
+      max-width: 100%;
+    }
+
+    /* Seção Sobre */
+    #sobre {
+      background-color: #212121;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin: 0 auto;
+      color: #fff;
+    }
+    
+    #sobre img {
+      width: 325px;
+      height: 325px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+      max-width: 100%;
+    }
+    
+    #sobre div {
+      max-width: 600px;
+    }
+
+    /* Seção de Projetos + Accordion */
+    #projetos {
+      scroll-margin-top: 80px;
+      background-color: #131313;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    
+    .accordion {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .accordion-item {
+      background-color: #1C1C1C;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #333;
+    }
+    
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 15px 20px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .accordion-header:hover {
+      background-color: #2A2A2A;
+    }
+    
+    .accordion-icon {
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    
+    .accordion-content {
+      display: none;
+      padding: 0 20px 20px 20px;
+      animation: fadeIn 0.3s forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    
+    .accordion-item.active .accordion-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Habilidades */
+    #habilidades {
+      background-color: #212121;
+      color: #fff;
+    }
+    
+    #habilidades ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    #habilidades li {
+      background: #1C1C1C;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    /* Contato */
+    #contato {
+      background-color: #131313;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+      }
+
+      header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      #introducao .conteudo {
+        flex-direction: column;
         text-align: center;
-        color: #fff;
-        }
-        #introducao .conteudo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        #introducao .texto {
-            text-align: left;
-        }
-        #introducao .paragrafo1 {
-            font-size: 16px;
-            margin: 0;
-        }
-        #introducao .paragrafo2 {
-            font-size: 48px;
-            font-weight: bold;
-            margin: 5px 0;
-        }
-        #introducao .paragrafo3 {
-            font-size: 16px;
-            margin: 0;
-        }
-        #introducao img {
-            width: 375px;
-            height: 467px;
-            object-fit: contain;
-        }
-        #sobre {
-            background-color: #212121;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-            color: #fff;
-        }
-        #sobre img {
-            width: 325px;
-            height: 325px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
-        }
-        #sobre div {
-            max-width: 600px;
-        }
-    </style>
+        gap: 20px;
+      }
+
+      #introducao img {
+        width: 80%;
+        height: auto;
+      }
+
+      #sobre {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      #sobre img {
+        width: 80%;
+        height: auto;
+      }
+
+      .accordion {
+        width: 95%;
+      }
+
+      .paragrafo2 {
+        font-size: 36px !important;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header img {
+        width: 80px;
+      }
+
+      header nav ul {
+        gap: 10px;
+      }
+
+      header nav a {
+        font-size: 14px;
+      }
+
+      #introducao {
+        padding: 40px 20px;
+      }
+
+      #introducao .paragrafo2 {
+        font-size: 28px !important;
+      }
+
+      #sobre div {
+        padding: 0 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        position: fixed;
+        min-height: 60px;
+      }
+
+      section {
+        padding-top: 80px;
+      }
+
+      header nav ul {
+        gap: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo vhjs.png" alt="Logotipo do Portfólio">
-        <nav>
-            <ul>
-                <li><a href="#introducao">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="introducao">
-        <div class="conteudo">
-            <div class="texto">
-                <p class="paragrafo1">Olá, me chamo</p>
-                <p class="paragrafo2">Vitor Hugo</p>
-                <p class="paragrafo3">Desbravando o mundo do desenvolvimento Web.</p>
-            </div>
-            <img src="coding.png" alt="Imagem de desenvolvimento">
+
+  <!-- Cabeçalho fixo -->
+  <header>
+    <img src="logo vhjs.png" alt="Logotipo do Portfólio">
+    <nav>
+      <ul>
+        <li><a href="#introducao">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Introdução -->
+  <section id="introducao">
+    <div class="conteudo">
+      <div class="texto">
+        <p class="paragrafo1">Olá, me chamo</p>
+        <p class="paragrafo2">Vitor Hugo</p>
+        <p class="paragrafo3">Desbravando o mundo do desenvolvimento Web.</p>
+      </div>
+      <img src="coding.png" alt="Imagem de desenvolvimento">
+    </div>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQHkbVHQscuN3Q/profile-displayphoto-shrink_400_400/B4DZPgOh7XGUAg-/0/1734633726647?e=1745452800&v=beta&t=qeJpCTvXhQxmsF54QKgCl3SDJzXGfNLS-hgB7PCNZOQ" alt="Foto de Vitor Hugo">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>Sou um graduando em Engenharia de Computação e atualmente estagiário na área de Automação no Senai Cimatec. Apaixonado por resolver problemas complexos e criar soluções digitais inovadoras, concentro meus esforços em desenvolver sistemas eficientes, funcionais e de alta qualidade.</p>
+      <p>Ao longo da minha jornada como desenvolvedor, tive a oportunidade de colaborar em projetos desafiadores e trabalhar ao lado de outros desenvolvedores talentosos. Juntos, criamos aplicativos robustos e escrevemos códigos limpos, fáceis de manter e compreender. Minha dedicação aos estudos me proporcionou uma base sólida em desenvolvimento web, e tenho aplicado esses conhecimentos em cenários práticos e aplicações reais.</p>
+      <p>Além disso, sou fascinado por tecnologia, automação e inovação. Estou sempre buscando aprender algo novo, explorar diferentes abordagens e pensar em formas de melhorar processos e produtos. Quando não estou codando ou mergulhado em projetos, você pode me encontrar assistindo partidas de futebol ou perdendo a cabeça jogando Counter-Strike 2.</p>
+    </div>
+  </section>
+
+  <!-- Seção Projetos (Accordion) -->
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <div class="accordion">
+      <!-- Projeto 1 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Jogo de Xadrez em Java</h3>
+          <span class="accordion-icon">▽</span>
         </div>
-    </section>
-    <section id="sobre">
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHkbVHQscuN3Q/profile-displayphoto-shrink_400_400/B4DZPgOh7XGUAg-/0/1734633726647?e=1745452800&v=beta&t=qeJpCTvXhQxmsF54QKgCl3SDJzXGfNLS-hgB7PCNZOQ" alt="Foto de Vitor Hugo">
-        <div>
-            <h2>Sobre mim</h2>
-            <p>Sou um graduando em Engenharia de Computação e atualmente estagiário na área de Automação no Senai Cimatec. Apaixonado por resolver problemas complexos e criar soluções digitais inovadoras, concentro meus esforços em desenvolver sistemas eficientes, funcionais e de alta qualidade.</p>
-            <p>Ao longo da minha jornada como desenvolvedor, tive a oportunidade de colaborar em projetos desafiadores e trabalhar ao lado de outros desenvolvedores talentosos. Juntos, criamos aplicativos robustos e escrevemos códigos limpos, fáceis de manter e compreender. Minha dedicação aos estudos me proporcionou uma base sólida em desenvolvimento web, e tenho aplicado esses conhecimentos em cenários práticos e aplicações reais.</p>
-            <p>Além disso, sou fascinado por tecnologia, automação e inovação. Estou sempre buscando aprender algo novo, explorar diferentes abordagens e pensar em formas de melhorar processos e produtos. Quando não estou codando ou mergulhado em projetos, você pode me encontrar assistindo partidas de futebol ou perdendo a cabeça jogando Counter-Strike 2.</p>
+        <div class="accordion-content">
+          <p>Um jogo de xadrez, com interface gráfica, feito em Java, desenvolvido ao longo da matéria de Programação Orientada a Objetos.</p>
+          <img src="projeto2.jpg" alt="Xadrez em Java" style="max-width: 100%; height: auto;">
         </div>
-    </section>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-            <li>
-                <h3>Projeto: Jogo em C</h3>
-                <p>Um jogo de cartas em C, sem interface. Feito na matéria de Algoritmos e Estruturas de Dados.</p>
-                <img src="projeto1.jpg" alt="Jogo em C">
-            </li>
-            <li>
-                <h3>Projeto: Xadrez em Java</h3>
-                <p>Um jogo de xadrez em Java, feito na matéria de Programação Orientada a Objetos.</p>
-                <img src="projeto2.jpg" alt="Xadrez em Java">
-            </li>
-        </ul>
-    </section>
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Programação em Java</li>
-            <li>Desenvolvimento web com HTML, CSS e JavaScript</li>
-            <li>Banco de dados com MySQL</li>
-            <li>Programação em C</li>
-            <li>Programação em Python</li>
-        </ul>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato comigo pelo e-mail <a href="mailto:vitorhjs.contatoo@gmail.com">vitorhjs.contato@gmail.com</a> ou pelo telefone (11) 1234-5678.</p>
-        <p><a href="exercicio1.html">Aperte para uma surpresa</a></p>
-    </section>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Projeto 2</h3>
+          <span class="accordion-icon">▽</span>
+        </div>
+        <div class="accordion-content">
+          <p>Informações sobre o Projeto 2...</p>
+          <img src="projeto1.jpg" alt="Projeto 2" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Habilidades -->
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Programação em Java</li>
+      <li>Desenvolvimento web com HTML, CSS e JavaScript</li>
+      <li>Banco de dados com MySQL</li>
+      <li>Programação em C</li>
+      <li>Programação em Python</li>
+    </ul>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo pelo e-mail 
+      <a href="mailto:vitorhjs.contatoo@gmail.com">vitorhjs.contato@gmail.com</a> 
+      ou pelo telefone (11) 1234-5678.
+    </p>
+  </section>
+
+  <!-- Script para o Accordion -->
+  <script>
+    // Seleciona todos os cabeçalhos de cada "item" do accordion
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        // A div pai é .accordion-item
+        const accordionItem = header.parentElement;
+        // O conteúdo a ser aberto/fechado é o próximo elemento
+        const accordionContent = header.nextElementSibling;
+
+        // Verifica se já está aberto
+        if (accordionItem.classList.contains('active')) {
+          // Fecha
+          accordionItem.classList.remove('active');
+          accordionContent.style.display = 'none';
+        } else {
+          // Caso queira abrir apenas um por vez, descomente o bloco abaixo:
+          
+          document.querySelectorAll('.accordion-item').forEach(item => {
+            item.classList.remove('active');
+            item.querySelector('.accordion-content').style.display = 'none';
+          });
+          
+          // Abre
+          accordionItem.classList.add('active');
+          accordionContent.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
