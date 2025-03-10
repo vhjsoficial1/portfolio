@@ -203,6 +203,8 @@ body {
   #habilidades {
     background-color: #212121;
     color: #fff;
+    margin : 0 auto;
+    padding: 20px 20px;
   }
   
   #habilidades ul {
