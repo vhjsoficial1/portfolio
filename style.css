@@ -1,33 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-
-header, section, #introducao, #sobre, #projetos, #habilidades, #contato {
-    width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 
 
 /* Estilos gerais */
@@ -173,6 +143,7 @@ body {
     background-color: #131313;
     color: #fff;
     padding: 40px 20px;
+    
   }
   
   .accordion {
