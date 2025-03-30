@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio // Vitor</title>
-  <link rel="icon" href="logo vhjs quadrada.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="icon" href="assets/images/logo vhjs quadrada.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="script/script.js"></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 </head>
 <body>
 
   <!-- Cabeçalho fixo -->
   <header>
-    <img src="logo vhjs.png" alt="Logotipo do Portfólio">
+    <img src="assets/images/logo vhjs.png" alt="Logotipo do Portfólio">
     <nav>
       <ul>
         <li><a href="#introducao">Início</a></li>
@@ -31,9 +32,9 @@
       <div class="texto">
         <p class="paragrafo1">Olá, me chamo</p>
         <p class="paragrafo2">Vitor Hugo</p>
-        <p class="paragrafo3">Desbravando o mundo do desenvolvimento Web.</p>
+        <p class="paragrafo3">E agora estou desbravando o mundo do desenvolvimento Web.</p>
       </div>
-      <img src="coding.png" alt="Imagem de desenvolvimento">
+      <img src="assets/images/coding.png" alt="Imagem de desenvolvimento">
     </div>
   </section>
 
@@ -43,9 +44,6 @@
     <div>
       <h2>Sobre mim</h2>
       <p>Sou um graduando em Engenharia de Computação e atualmente estagiário na área de Automação no Senai Cimatec. Apaixonado por resolver problemas complexos e criar soluções digitais inovadoras, concentro meus esforços em desenvolver sistemas eficientes, funcionais e de alta qualidade.</p>
-      <!--
-      <p>Ao longo da minha jornada como desenvolvedor, tive a oportunidade de colaborar em projetos desafiadores e trabalhar ao lado de outros desenvolvedores talentosos. Juntos, criamos aplicativos robustos e escrevemos códigos limpos, fáceis de manter e compreender. Minha dedicação aos estudos me proporcionou uma base sólida em desenvolvimento web, e tenho aplicado esses conhecimentos em cenários práticos e aplicações reais.</p>
-      -->
       <p>Além disso, sou fascinado por tecnologia, automação e inovação. Estou sempre buscando aprender algo novo, explorar diferentes abordagens e pensar em formas de melhorar processos e produtos. Quando não estou codando ou mergulhado em projetos, você pode me encontrar assistindo partidas de futebol ou perdendo a cabeça jogando Counter-Strike 2.</p>
     </div>
   </section>
@@ -54,7 +52,8 @@
   <section id="projetos">
     <h2>Projetos</h2>
     <div class="accordion">
-      <!-- Projeto 1 -->
+
+      <!-- Xadrez Java -->
       <div class="accordion-item">
         <div class="accordion-header">
           <h3>Jogo de Xadrez em Java</h3>
@@ -62,12 +61,19 @@
         </div>
         <div class="accordion-content">
           <p>Um jogo de xadrez, com tema de pixel, com interface gráfica, feito em Java, desenvolvido ao longo da matéria de Programação Orientada a Objetos.</p>
-          <img src="xadrez java.png" alt="Xadrez em Java" style="max-width: 100%; height: auto;">
-          <img src="jogo java.png" alt="Xadrez em Java" style="max-width: 100%; height: auto; margin-top: 10px;">
+          <img src="assets/images/xadrez java.png" alt="Xadrez em Java" style="max-width: 100%; height: auto;">
+          <img src="assets/images/jogo java.png" alt="Xadrez em Java" style="max-width: 100%; height: auto; margin-top: 10px;">
+
+          <!-- Links para GitHub e Vercel -->
+          <div class="project-links">
+            <a href="https://github.com/yanchagas04/flamengoPOO" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Projeto 2 -->
+      <!-- Portfolio -->
       <div class="accordion-item">
         <div class="accordion-header">
           <h3>GitHub Portfolio</h3>
@@ -75,32 +81,138 @@
         </div>
         <div class="accordion-content">
           <p>Um portfólio pessoal feito com HTML, CSS e JavaScript, utilizando o GitHub/Vercel para hospedar o site.</p>
-          <img src="github portfolio.png" alt="GitHib Portfolio" style="max-width: 100%; height: auto;">
+          <img src="assets/images/github portfolio.png" alt="GitHib Portfolio" style="max-width: 100%; height: auto;">
+
+          <!-- Links para GitHub e Vercel -->
+          <div class="project-links">
+            <a href="hhttps://github.com/vhjsoficial1/portfolio" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gerador de Tickets -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Gerador de Tickets</h3>
+          <span class="accordion-icon">▽</span>
+        </div>
+        <div class="accordion-content">
+          <p>Um sistema gerador de ticket, feito com HTML, CSS e JavaScript, utilizando o GitHub/Vercel para hospedar o site. Desenvolvido para a matéria de Desenvolvimento Fullstack. Além de ser um desafio página Frontend Mentor.</p>
+          <img src="assets/images/gerador-ticket-lobby.png" alt="GitHib Portfolio" style="max-width: 100%; height: auto;">
+          <img src="assets/images/gerador-ticket.png" alt="GitHib Portfolio" style="max-width: 100%; height: auto;">
+
+          <!-- Links para GitHub e Vercel -->
+          <div class="project-links">
+            <a href="https://github.com/vhjsoficial1/geracao-de-tickets" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://geracao-de-tickets-vhjsoficial1s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Vercel
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculadora de Idade -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Calculadora de Idade</h3>
+          <span class="accordion-icon">▽</span>
+        </div>
+        <div class="accordion-content">
+          <p>Um sistema de calculadora de idade, feito com React JS, utilizando o GitHub/Vercel para hospedar o site. Desenvolvido para a matéria de Desenvolvimento Fullstack. Além de ser um desafio página Frontend Mentor.</p>
+          <img src="assets/images/calculadora-idade.png" alt="Calculadora de Idade" style="max-width: 100%; height: auto;">
+
+          <!-- Links para GitHub e Vercel -->
+          <div class="project-links">
+            <a href="https://github.com/vhjsoficial1/calculadora-de-idade" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://calculadora-de-idade-vhjsoficial1s-projects.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Vercel
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gerenciador de Tarefas Me Lembra AI -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <h3>Me Lembra AI</h3>
+          <span class="accordion-icon">▽</span>
+        </div>
+        <div class="accordion-content">
+          <p>Um sistema de gerenciamento de tarefas, feito com Next, utilizando o GitHub/Vercel para hospedar o site. Desenvolvido para a matéria de Desenvolvimento Fullstack. Feito por mim e mais 3 amigos do curso. (Ainda em desenvolvimento)</p>
+          <!-- <img src="assets/images/github portfolio.png" alt="GitHub Portfolio" style="max-width: 100%; height: auto;"> -->
+          
+          <!-- Links para GitHub e Vercel -->
+          <div class="project-links">
+            <a href="https://github.com/yanchagas04/MelembraAI" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://melembra-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Vercel
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção Habilidades -->
-  <section id="habilidades">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Programação em Java</li>
-      <li>Desenvolvimento web com HTML, CSS e JavaScript</li>
-      <li>Banco de dados com MySQL</li>
-      <li>Programação em C</li>
-      <li>Programação em Python</li>
-    </ul>
-  </section>
+<!-- Seção Habilidades -->
+<section id="habilidades">
+  <h2>Habilidades</h2>
+  <ul class="habilidades-lista">
+    <li><img src="assets/images/java.png" alt="Java" title="Programação em Java"></li>
+    <li><img src="assets/images/html.png" alt="Web Development" title="HTML"></li>
+    <li><img src="assets/images/css.png" alt="MySQL" title="CSS"></li>
+    <li><img src="assets/images/js.png" alt="JavaScript" title="Programação em C"></li>
+    <li><img src="assets/images/mysql.png" alt="Linguagem C" title="Banco de Dados MySQL"></li>
+    <li><img src="assets/images/c.png" alt="Linguagem C" title="Programação em C"></li>
+    <li><img src="assets/images/cpp.png" alt="Linguagem C" title="Programação em C++"></li>
+    <li><img src="assets/images/python.png" alt="Python" title="Programação em Python"></li>
+  </ul>
+</section>
 
-  <!-- Seção Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Entre em contato comigo pelo e-mail 
-      <a href="mailto:vitorhjs.contatoo@gmail.com">vitorhjs.contato@gmail.com</a> 
-      ou pelo telefone (11) 1234-5678.
-    </p>
-  </section>
+<!-- Seção Contato -->
+<section id="contato">
+  <h2>Contato</h2>
+  <div class="contato-container">
+    <p class="contato-chamada">Se quiser entrar em contato comigo, tirar alguma dúvida ou conversar sobre oportunidades, esses são meus canais:</p>
+    
+    <!-- Container para LinkedIn e GitHub -->
+    <div class="contato-cards">
+      <!-- LinkedIn -->
+      <div class="linkedin-card">
+        <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="vitor-hugo-de-jesus-santos-15b7b724a" data-version="v1">
+          <a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/vitor-hugo-de-jesus-santos-15b7b724a" target="_blank"></a>
+        </div>
+      </div>
+      
+      <!-- GitHub -->
+      <div class="github-card">
+        <div class="github-header">
+          <img src="https://avatars.githubusercontent.com/u/143950087?v=4" alt="Vitor Hugo" class="github-avatar">
+          <div class="github-info">
+            <div class="github-user">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+              <strong>vhjsoficial1</strong>
+            </div>
+            <p>Vitor Hugo de Jesus Santos</p>
+          </div>
+        </div>
+        
+        <div class="github-streak">
+          <img src="https://streak-stats.demolab.com?user=vhjsoficial1&locale=en&mode=daily&theme=dark&hide_border=false&border_radius=5&order=3" alt="GitHub Stats" class="streak-img">
+        </div>
+        
+        <a href="https://github.com/vhjsoficial1" target="_blank" class="github-button">Ver Perfil no GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
