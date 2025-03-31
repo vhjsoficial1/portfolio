@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 /* Estilos gerais */
 body {
@@ -377,8 +379,7 @@ body {
   background: #2ea043;
 }
 
-
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE contato*/
 @media (max-width: 700px) {
   .contato-cards {
     flex-direction: column;
@@ -397,7 +398,7 @@ body {
     header {
       flex-direction: column;
       padding: 10px;
-      position: relative;
+      position: fixed;
     }
   
     header nav ul {
@@ -410,6 +411,7 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      padding-top: 60px;
       gap: 20px;
     }
   
