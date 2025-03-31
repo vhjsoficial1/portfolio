@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Controle do menu responsivo
+  const menuToggle = document.getElementById("menu-toggle");
+  const navMenu = document.querySelector("header nav ul");
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+  }
+
   // Accordion para a seção de projetos
   const accordionItems = document.querySelectorAll(".accordion-item");
 
